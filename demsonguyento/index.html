@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So nguyen to</title>
+</head>
+<body>
+
+<script>
+function isPrime(a) {
+    if (a == 2) {
+        return true;
+    }
+        for (let i = 2; i < a; i++) {
+            if (a % i == 0) {
+                return false;
+            }
+
+            }    return true;
+
+    }
+
+    let m = +prompt('Nhap so :')
+let count = 1;
+let i = 2;
+while (count <= m) {
+    if (isPrime(i)) {
+        document.write(i + '<br/>')
+        count++;
+    }i++;
+}
+
+</script>
+</body>
+</html>
